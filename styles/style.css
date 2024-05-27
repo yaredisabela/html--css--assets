@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-letra-lightmode: #333;
+    --cor-span: #007bff;
+    --cor-hover: #0056b3;
+    --cor-background-lightmode:#f5f5f5;
+    --cor-header-lightmode: #FFFFFF;
+    --cor-background-darkmode:  #0E0E1E;
+    --cor-header-darkmode: #131338;
+
+    --font: "Exo 2";
+
+
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-background-lightmode);
+    color: var(--cor-letra-lightmode);
+}
+
+header {
+    background-color: var(--cor-header-lightmode);
+    padding: 1.25rem 0;
+    max-width: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--cor-letra-lightmode);
+}
+
+h1 span {
+    font-weight: 600;
+    color: var(--cor-span);
+}
+
+nav ul {
+    font-size: 1.375rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-letra-lightmode);
+    font-weight: 600;
+}
+
+.imagens {
+    display: flex;
+    align-items: center;
+}
+
+.flags {
+    width: 6vw;
+    height: 3.4rem;
+    margin-left: 2rem;
+}
+
+.moon {
+    width: 5vw;
+    height: 4.120rem;
+    margin-left: 1.25rem;
+}
+
+main {
+    padding: 2.5rem 0;
+}
+
+.about {
+    text-align: left;
+}
+
+.about h2 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    margin-bottom: 0.625rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.about h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: 1.25rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.about p {
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 1.8rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.botao {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.botao a{
+    font-family: var(--font);
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 0.75rem 3rem;
+    border: none;
+    border-radius: 0.31rem;
+    background-color: #007bff; /* Azul do Bootstrap */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+.social-media {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2.5rem;
+}
+
+.social-media a {
+    margin: 0 0.625rem;
+}
+
+.social-media img {
+     max-width: 6.31rem;
+    height: auto;
+}
+
+
+
+.image1 {
+    text-align: center;
+}
+
+.image1 img {
+    max-width: 26.25rem;
+    height: auto;
+}
+
+.sobre-mim {
+    padding: 3.125rem;
+    text-align: center;
+}
+
+.sobre-mim h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.77rem;
+    margin-bottom: 0.625rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.sobre-mim .conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sobre-mim p {
+    padding: 3.125rem;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+
+.sobre-mim img {
+    padding: 1.875rem;
+    max-width: 26.25rem;
+    height: auto;
+}
+
+.projetos {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.projetos h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.775rem;
+    margin-bottom: 0.625rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.projetos p{
+    font-size: 1.8rem;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    margin: 0
+}
+
+.slider-container {
+    position: relative;
+    width: 45rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide.prev,
+.slide.next {
+    opacity: 0;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.625rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--cor-header-lightmode);
+}
+
+.saiba-mais {
+    display: flex;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.saiba-mais a{
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: #007bff; /* Azul do Bootstrap */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.625rem;
+}
+
+.pagination .dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 0.3125rem;
+    cursor: pointer;
+}
+
+.pagination .dot.active {
+    background-color: #333;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow.prev {
+    left: 0.625rem;
+}
+
+.arrow.next {
+    right: 0.625rem;
+}
+
+.isa-idea {
+    bottom: 12.5rem;
+    right: 9.375rem;
+    max-width: 25rem;
+    height: auto;
+}
+
+
+.conteudo00 {
+    text-align: center;
+}
+
+.conteudo00 h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.775rem;
+    margin-bottom: 0.625rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.conteudo00 p{
+    font-size: 1.8rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.botao01 {
+    font-family: var(--font);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: #007bff; /* Azul do Bootstrap */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    text-align: right;
+}
+.footer h5{
+    font-size: 1.3rem;
+}
+.footer span{
+    color:var(--cor-span);
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    --cor-letra-lightmode: #eee; /* Cor do texto em modo escuro */
+    --cor-span: #007bff;
+    --cor-hover: #0056b3;
+    --cor-background-lightmode: #0E0E1E;  /* Cor de fundo em modo escuro */
+    --cor-header-lightmode: #131338; /* Cor do cabeçalho em modo escuro */
+    --cor-background-darkmode: #f5f5f5; /* Cor de fundo em modo claro */
+    --cor-header-darkmode: #FFFFFF; /* Cor do cabeçalho em modo claro */
+
+    /* Adicione quaisquer outros estilos de modo escuro aqui */
+}
+

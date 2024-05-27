@@ -30,9 +30,9 @@ header {
 }
 
 .container {
-    max-width: 95vw;
+    max-width: 95%;
     margin: 0 auto;
-    padding: 0 1.25rem;
+    padding: 0 1.25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +109,7 @@ main {
 }
 
 .about p {
-    font-size: 2.3rem;
+    font-size: 3vw;
     font-weight: 400;
     line-height: 2.8rem;
     margin-bottom: 1.8rem;
@@ -123,9 +123,9 @@ main {
 
 .botao a{
     font-family: var(--font);
-    font-size: 2.3rem;
+    font-size: 2.5vw;
     font-weight: 600;
-    padding: 0.75rem 3rem;
+    padding: 1.5% 5%;
     border: none;
     border-radius: 0.31rem;
     background-color: #007bff; /* Azul do Bootstrap */
@@ -149,7 +149,7 @@ button:hover {
 }
 
 .social-media img {
-     max-width: 6.31rem;
+    max-width: 7vw;
     height: auto;
 }
 
@@ -185,9 +185,10 @@ button:hover {
 }
 
 .sobre-mim p {
-    padding: 3.125rem;
     text-align: left;
-    font-size: 1.3rem;
+    padding: 0%;
+    font-size: 1.5vw;
+    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1.25rem;
 }
@@ -200,7 +201,7 @@ button:hover {
 }
 
 .projetos {
-    padding: 5rem 0;
+    padding: 5% 0;
     text-align: center;
 }
 
@@ -258,7 +259,7 @@ button:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 0.625rem;
+    padding: 2% 5%;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--cor-header-lightmode);
 }
@@ -271,9 +272,9 @@ button:hover {
 
 .saiba-mais a{
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 500;
-    padding: 0.75rem 1rem;
+    padding: 1.5% 3%;
     border: none;
     border-radius: 0.3125rem;
     background-color: #007bff; /* Azul do Bootstrap */
@@ -289,11 +290,11 @@ button:hover {
 }
 
 .pagination .dot {
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 1vw;
+    height: 1vw;
+    margin: 0 1%;
     border-radius: 50%;
     background-color: #ccc;
-    margin: 0 0.3125rem;
     cursor: pointer;
 }
 
@@ -307,10 +308,11 @@ button:hover {
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 0.3125rem 0.625rem;
     border-radius: 0.3125rem;
     cursor: pointer;
     z-index: 1;
+    padding: 2% 3%;
+    font-size: 2vw;
 }
 
 .arrow.prev {
@@ -343,27 +345,27 @@ button:hover {
 }
 
 .conteudo00 p{
-    font-size: 1.8rem;
+    font-size: 2.5vw;
 }
 
 .botoes {
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
-    margin-bottom: 2.5rem;
+    gap: 2%;
+    margin-bottom: 5%;
 }
 
 .botao01 {
     font-family: var(--font);
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding: 0.625rem 1.25rem;
+    font-weight: 700;
     border: none;
     border-radius: 0.3125rem;
     background-color: #007bff; /* Azul do Bootstrap */
     color: white;
     cursor: pointer;
     text-decoration: none;
+    padding: 1.5% 3%;
+    font-size: 1.5vw;
 }
 
 .footer {
@@ -390,6 +392,4 @@ button:hover {
     --cor-background-darkmode: #f5f5f5; /* Cor de fundo em modo claro */
     --cor-header-darkmode: #FFFFFF; /* Cor do cabeçalho em modo claro */
 
-    /* Adicione quaisquer outros estilos de modo escuro aqui */
 }
-

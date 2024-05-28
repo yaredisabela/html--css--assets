@@ -80,7 +80,7 @@ nav a {
 
 .moon {
     width: 5vw;
-    height: 4.120rem;
+    height: auto;
     margin-left: 1.25rem;
 }
 
@@ -322,6 +322,202 @@ button:hover {
 .arrow.next {
     right: 0.625rem;
 }
+
+.isa-idea {
+    bottom: 12.5rem;
+    right: 9.375rem;
+    max-width: 25rem;
+    height: auto;
+}
+
+
+.conteudo00 {
+    text-align: center;
+}
+
+.conteudo00 h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.775rem;
+    margin-bottom: 0.625rem;
+    color: var(--cor-letra-lightmode);
+}
+
+.conteudo00 p{
+    font-size: 2.5vw;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+.botao01 {
+    font-family: var(--font);
+    font-weight: 700;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: #007bff; /* Azul do Bootstrap */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1.5% 3%;
+    font-size: 1.5vw;
+}
+
+.footer {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    text-align: right;
+}
+.footer h5{
+    font-size: 1.3rem;
+}
+.footer span{
+    color:var(--cor-span);
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    --cor-letra-lightmode: #eee; /* Cor do texto em modo escuro */
+    --cor-span: #007bff;
+    --cor-hover: #0056b3;
+    --cor-background-lightmode: #0E0E1E;  /* Cor de fundo em modo escuro */
+    --cor-header-lightmode: #131338; /* Cor do cabeçalho em modo escuro */
+    --cor-background-darkmode: #f5f5f5; /* Cor de fundo em modo claro */
+    --cor-header-darkmode: #FFFFFF; /* Cor do cabeçalho em modo claro */
+
+}
+
+/* responsividade */
+@media only screen and (max-width: 808px) {
+    /* Estilos para telas menores que 768px */
+    header {
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        font-size: 1rem;
+    }
+
+
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .botao a {
+        font-size: 1.2rem;
+        padding: 1% 3%;
+    }
+
+    .social-media img {
+        max-width: 5vw;
+    }
+
+    .sobre-mim img {
+        max-width: 100%;
+    }
+
+    .sobre-mim p {
+        font-size: 1rem;
+    }
+
+    .projetos h2 {
+        font-size: 2.5rem;
+    }
+
+    .projetos p {
+        font-size: 1.5rem;
+    }
+
+    .slider-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .pagination .dot {
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: 0 0.2rem;
+    }
+
+    .arrow {
+        padding: 1% 2%;
+        font-size: 1.5rem;
+    }
+
+    .conteudo00 h2 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo00 p {
+        font-size: 1.2rem;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .botao01 {
+        padding: 1% 2%;
+        font-size: 1rem;
+    }
+}
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: var(--cor-background-darkmode);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 808px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 808px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
 .isa-idea {
     bottom: 12.5rem;

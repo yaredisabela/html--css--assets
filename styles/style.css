@@ -16,8 +16,8 @@
 
 body {
     font-family: var(--font);
-    margin: 0;
-    padding: 0;
+    margin: 0.7rem;
+    padding: 0.5rem;
     background-color: var(--cor-background-lightmode);
     color: var(--cor-letra-lightmode);
 }
@@ -61,8 +61,8 @@ h1 span {
     text-align: center;
     padding: 0.8rem 1rem;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 600;
   }
 
   
@@ -70,7 +70,7 @@ h1 span {
     display: none;
   }
   
-  @media screen and (max-width: 50.5rem) {
+  @media screen and (max-width: 52.9.5rem) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -78,7 +78,7 @@ h1 span {
     }
   }
   
-  @media screen and (max-width: 50.5rem) {
+  @media screen and (max-width: 52.9rem) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -189,7 +189,7 @@ button:hover {
 }
 
 .sobre-mim {
-    padding: 3.125rem;
+    padding: 3vw 21vw 3vw 21vw;
     text-align: center;
 }
 
@@ -204,12 +204,12 @@ button:hover {
 
 .sobre-mim .conteudo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
 .sobre-mim p {
-    text-align: left;
+    text-align: center;
     padding: 0%;
     font-size: 1.5vw;
     font-weight: 400;
@@ -220,7 +220,7 @@ button:hover {
 
 .sobre-mim img {
     padding: 1.875rem;
-    max-width: 26.25rem;
+    max-width: 23.5rem;
     height: auto;
 }
 
@@ -242,109 +242,54 @@ button:hover {
     font-size: 1.8rem;
 }
 
-.corpo{
+.projetos_conteudo {
+    padding: 3rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    gap: 3.125rem;
     align-items: center;
-    justify-content: center;
-    height: 55vh;
-    margin: 0
 }
 
-.slider-container {
-    position: relative;
-    width: 45rem;
-    height: 100%;
-    overflow: hidden;
+.projetos_conteudo p{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 1s ease;
+.projetos_conteudo h3{
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
-.slide.active {
-    opacity: 1;
+
+.projetos_conteudo span{
+    font-size: 1rem;
 }
 
-.slide.prev,
-.slide.next {
-    opacity: 0;
+.projetos_conteudo_imagens {
+    text-align: center;
 }
 
-.slide-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 2% 5%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--cor-header-lightmode);
+.projetos_conteudo_imagens img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
 }
 
-.saiba-mais {
-    display: flex;
-    margin-bottom: 0.5rem;
-    justify-content: center;
+.projetos_conteudo_imagens img:hover {
+    transform: scale(1.05);
 }
 
-.saiba-mais a{
-    font-family: var(--font);
-    font-size: 1vw;
-    font-weight: 500;
-    padding: 1.5% 3%;
-    border: none;
-    border-radius: 0.3125rem;
-    background-color: #007bff; /* Azul do Bootstrap */
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.pagination {
+.tech-icons {
     display: flex;
     justify-content: center;
-    margin-top: 0.625rem;
+    gap: 10px;
 }
 
-.pagination .dot {
-    width: 1vw;
-    height: 1vw;
-    margin: 0 1%;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
-.pagination .dot.active {
-    background-color: #333;
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 0.3125rem;
-    cursor: pointer;
-    z-index: 1;
-    padding: 2% 3%;
-    font-size: 2vw;
-}
-
-.arrow.prev {
-    left: 0.625rem;
-}
-
-.arrow.next {
-    right: 0.625rem;
+.tech-icons span {
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 3px;
 }
 
 .isa-idea {
@@ -419,7 +364,7 @@ button:hover {
 }
 
 /* responsividade */
-@media only screen and (max-width: 50.5rem) {
+@media only screen and (max-width: 52.9rem) {
     header {
         background-color: var(--cor-header-lightmode);
         padding: 0.8rem 0;
@@ -460,7 +405,7 @@ button:hover {
         padding: 0.4rem 0.5rem;
         text-decoration: none;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
       }
     
       
@@ -468,7 +413,7 @@ button:hover {
         display: none;
       }
       
-      @media screen and (max-width: 50.5rem) {
+      @media screen and (max-width: 52.5rem) {
         .topnav a:not(:first-child) {display: none;}
         .topnav a.icon {
           float: right;
@@ -514,7 +459,7 @@ button:hover {
 
     .about h2 {
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 3vh;
         line-height: 1.4rem;
         margin-bottom: 0.3rem;
         color: var(--cor-letra-lightmode);
@@ -522,28 +467,27 @@ button:hover {
     
     .about h1 {
         font-weight: 800;
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-size: 5.5vh;
+        line-height: 5.5vh;
         margin-bottom: 0.625rem;
         color: var(--cor-letra-lightmode);
     }
     
     .about p {
-        font-size: 4vw;
+        font-size: 2.5vh;
+        line-height: 2.5vh;
         font-weight: 400;
-        line-height: 1.4rem;
         margin-bottom: 0.9rem;
         color: var(--cor-letra-lightmode);
     }
     
     .botao {
         display: flex;
-        margin-bottom: 3rem;
     }
     
     .botao a{
         font-family: var(--font);
-        font-size: 5vw;
+        font-size: 2.5vh;
         font-weight: 600;
         padding: 1.5% 5%;
         border: none;
@@ -558,19 +502,10 @@ button:hover {
         background-color: var(--cor-hover);
     }
     
-    .social-media {
-        display: flex;
-        justify-content: left;
-        margin-bottom: 1rem;
-    }
-    
-    .social-media a {
-        margin: 0 0.150rem;
-    }
-    
     .social-media img {
-        max-width: 15vw;
+        max-width: 7vw;
         height: auto;
+        align-items: left;
     }
     
     .image1 img{
@@ -578,21 +513,20 @@ button:hover {
     }
     
     .image1 img {
-        max-width: 13rem;
+        max-width: 40vw;
         height: auto;
     }
 
     .sobre-mim {
-        padding: 1rem;
         text-align: center;
     }
     
     .sobre-mim h2{
         text-align: center;
         font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 1rem;
-        margin-bottom: 0.150rem;
+        font-size: 4vh;
+        line-height: 4vh;
+        margin-bottom: 0.3rem;
         color: var(--cor-letra-lightmode);
     }
     
@@ -605,16 +539,16 @@ button:hover {
     .sobre-mim p {
         text-align: center;
         padding: 0%;
-        font-size: 4vw;
+        font-size: 2.5vh;
         font-weight: 400;
-        line-height: 1.6;
-        margin-bottom: 0.625rem;
+        line-height: 2.5vh;
+        margin-bottom: 1.25rem;
     }
     
     
     .sobre-mim img {
-        padding: 1.4rem;
-        max-width: 13rem;
+        padding: 0.8rem;
+        max-width: 40vw;
         height: auto;
     }
 
@@ -626,123 +560,64 @@ button:hover {
     .projetos h2 {
         text-align: center;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 4vh;
         line-height: 1.3rem;
         margin-bottom: 0.100rem;
         color: var(--cor-letra-lightmode);
     }
     
     .projetos p{
-        font-size: 0.9rem;
+        font-size: 2.5vh;
     }
     
-    .corpo{
+    .projetos_conteudo {
+        padding: 3rem;
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: center;
-        height: 28vh;
-        margin: 0
     }
     
-    .slider-container {
-        position: relative;
-        width: 100vw;
-        height: 100%;
-        overflow: hidden;
+    .projetos_conteudo p{
+        font-size: 2.5vh;
+        font-weight: 600;
     }
     
-    .slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        transition: opacity 1s ease;
+    .projetos_conteudo h3{
+        font-size: 2.5vh;
+        font-weight: 400;
     }
     
-    .slide.active {
-        opacity: 1;
+    
+    .projetos_conteudo span{
+        font-size: 2vh;
     }
     
-    .slide.prev,
-    .slide.next {
-        opacity: 0;
+    .projetos_conteudo_imagens {
+        text-align: center;
     }
     
-    .slide-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 2% 5%;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: var(--cor-header-lightmode);
-    }
-
-    .slide-content h3{
-        font-size: 0.8rem;
+    .projetos_conteudo_imagens img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
     }
     
-    .saiba-mais {
-        display: flex;
-        margin-bottom: 0.25rem;
-        justify-content: center;
+    .projetos_conteudo_imagens img:hover {
+        transform: scale(1.05);
     }
     
-    .saiba-mais a{
-        font-family: var(--font);
-        font-size: 1vw;
-        font-weight: 500;
-        padding: 1.5% 3%;
-        border: none;
-        border-radius: 0.15rem;
-        background-color: #007bff; /* Azul do Bootstrap */
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    
-    .pagination {
+    .tech-icons {
         display: flex;
         justify-content: center;
-        margin-top: 0.300rem;
+        gap: 10px;
     }
     
-    .pagination .dot {
-        width: 1vw;
-        height: 1vw;
-        margin: 0 1%;
-        border-radius: 50%;
-        background-color: #ccc;
-        cursor: pointer;
-    }
-    
-    .pagination .dot.active {
-        background-color: #333;
-    }
-    
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border-radius: 0.3125rem;
-        cursor: pointer;
-        z-index: 1;
-        padding: 2% 3%;
-        font-size: 2vw;
-    }
-    
-    .arrow.prev {
-        left: 0.300rem;
-    }
-    
-    .arrow.next {
-        right: 0.300rem;
+    .tech-icons span {
+        background-color: var(--cor-header-lightmode);
+        color: var(--cor-background-darkmode);
+        padding: 5px 10px;
+        border-radius: 3px;
     }
     
     .conteudo00 {
